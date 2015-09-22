@@ -1,5 +1,18 @@
 # tty.js
 
+Note: my fork supportd HTML passthrough with ESC5:
+
+```sh
+#!/bin/bash
+# htmlcat.sh
+printf '\0335'
+cat $1
+printf '\0336'
+
+# example
+# $ ./htmlcat snippet.html
+```
+
 A terminal in your browser using node.js and socket.io. Based on Fabrice
 Bellard's vt100 for [jslinux](http://bellard.org/jslinux/).
 
