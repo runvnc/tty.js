@@ -1,6 +1,6 @@
 # tty.js
 
-Note: my fork supportd HTML passthrough with ESC5:
+Note: my fork supports HTML passthrough with ESC5:
 
 ```sh
 #!/bin/bash
@@ -11,6 +11,7 @@ printf '\0336'
 
 # example
 # $ ./htmlcat snippet.html
+# shows HTML inline in terminal window
 ```
 
 A terminal in your browser using node.js and socket.io. Based on Fabrice
